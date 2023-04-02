@@ -1,0 +1,30 @@
+.input-area {
+  position: relative;
+  min-width: 400px;
+  max-width: 120vh;
+  margin: auto;
+}
+
+.chart-area {
+  position: relative;
+  min-width: 400px;
+  max-width: 120vh;
+  margin: auto;
+
+  .aspect-ratio {
+    padding-bottom: 70%;
+  }
+
+  .chart-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
+
+  .chart {
+    height: 90%;
+    width: 100%;
+  }
+}

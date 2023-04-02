@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Intrinsic Value Visualizer</title>
+  <script src="https://code.highcharts.com/stock/highstock.js"></script>
+  <script src="https://code.highcharts.com/highcharts-more.js"></script>
+  <script src="https://code.highcharts.com/modules/exporting.js"></script>
+  <script src="https://code.highcharts.com/modules/export-data.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="./style.scss">
+</head>
+
+<body>
+  <form id="symbolForm" class="input-area">
+    <label for="symbol">Enter stock symbol:</label>
+    <input type="text" id="symbol" value="0138.KL">
+    <input type="submit" value="Submit">
+  </form>
+  <div id="chart1" class="chart-area">
+    <div class="aspect-ratio"></div>
+    <div class="chart-wrapper">
+      <div class="chart"></div>
+    </div>
+  </div>
+  <form id="intrinsicForm" class="input-area">
+    <label for="growth">Expected Growth Rate:</label>
+    <input type="number" id="growth" placeholder="1.1 - 10% growth" value="1.1" step=".001">
+    <label for="peratio">Price/Earning:</label>
+    <input type="number" id="peratio" placeholder="15" value="35" step=".01">
+    <input type="submit" value="Submit">
+  </form>
+
+  <script src="./index.js"></script>
+</body>
+
+</html>
